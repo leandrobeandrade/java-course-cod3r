@@ -52,6 +52,6 @@ Repositório responsável por armazenar códigos referentes ao curso realizado n
 - Spring Data JPA - framework para acesso a dados ORM
 - Spring Data MongoDB - framework para acesso a dados NoSQL ao banco MongoDB
 
-## Autor: [Nélio Alves](https://github.com/acenelio)
+## Autor: [Cod3r](https://github.com/acenelio)
 
 ![java-logo](https://user-images.githubusercontent.com/24658433/177206628-02947c1c-cb21-4aed-abc4-b779fbbc158d.png)
