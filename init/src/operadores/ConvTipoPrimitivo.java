@@ -1,4 +1,4 @@
-package init;
+package operadores;
 
 import javax.swing.JOptionPane;
 
