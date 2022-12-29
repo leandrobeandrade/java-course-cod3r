@@ -2,7 +2,7 @@ package controladores;
 
 import java.util.Scanner;
 
-public class Exerc1 {
+public class Exerc_IfElse {
 
 	/**
 	 * 1. Criar um programa que receba um número e verifique se ele está entre 0 e
