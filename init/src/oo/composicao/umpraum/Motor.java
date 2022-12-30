@@ -8,7 +8,7 @@ public class Motor {
 		if (!ligado) {
 			return 0;
 		} else {
-			return 1;
+			return (int) Math.round(fatorInjecao * 3000);
 		}
 	}
 }
