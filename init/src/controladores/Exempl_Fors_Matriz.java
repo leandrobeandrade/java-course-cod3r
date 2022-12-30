@@ -3,7 +3,7 @@ package controladores;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Exerc_Fors_Matriz {
+public class Exempl_Fors_Matriz {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
