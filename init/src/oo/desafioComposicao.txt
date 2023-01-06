@@ -1,0 +1,9 @@
+# Desafio - Composição
+
+- 1 Produto está atrelado a 1 Item (1 <-> 1)
+- 1 Item está atrelado a várias Compras (1 <-> N)
+- 1 Compra está atrelada a vários Clientes (1 <-> N)
+
+## Relacionamentos
+
+- Todos relacionamentos são unidirecional
