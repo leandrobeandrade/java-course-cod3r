@@ -25,6 +25,10 @@ public class Consumidor {
 		System.out.println();
 		
 		produtos.forEach(p -> System.out.println(p.nome + " " + p.preco));
+		
+		System.out.println();
+		
+		produtos.forEach(System.out::println); // Method reference
 	}
 
 }
