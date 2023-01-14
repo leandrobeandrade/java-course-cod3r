@@ -1,15 +1,13 @@
-package lambdas.init;
+package lambdas;
 
-public class ComLambda {
+public class SemLambda {
 
 	public static void main(String[] args) {
-		Calculo calc = (x, y) -> {
-			return x + y;
-		};
+		Calculo calc = new Somar();
 		
 		System.out.println(calc.calcular(2, 2));
 		
-		calc = (x, y) -> x * y;
+		calc = new Multiplicar();
 		System.out.println(calc.calcular(2, 2));
 	}
 

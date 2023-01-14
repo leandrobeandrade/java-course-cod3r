@@ -1,4 +1,4 @@
-package lambdas.init;
+package lambdas;
 
 public interface Calculo {
 	double calcular(double a, double b);
