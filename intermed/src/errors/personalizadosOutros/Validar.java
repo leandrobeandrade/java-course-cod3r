@@ -3,7 +3,7 @@ package errors.personalizadosOutros;
 public class Validar {
 	private Validar( ) {}
 	
-	public static void aluno(Aluno aluno) {
+	public static void aluno(Aluno aluno) throws StringVaziaException, NumeroForaIntervaloException {
 		if (aluno == null) {
 			throw new IllegalArgumentException("O aluno está nulo!");
 		}

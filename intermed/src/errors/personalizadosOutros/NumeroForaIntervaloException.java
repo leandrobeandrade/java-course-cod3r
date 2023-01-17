@@ -1,6 +1,6 @@
 package errors.personalizadosOutros;
 
-public class NumeroForaIntervaloException extends RuntimeException {
+public class NumeroForaIntervaloException extends Exception {
 	private static final long serialVersionUID = 1L;
 	private String nomeDoAtributo;
 	
