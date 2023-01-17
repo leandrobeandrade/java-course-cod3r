@@ -64,6 +64,5 @@ class Alunos_ {
 		Alunos_ other = (Alunos_) obj;
 		return Objects.equals(nome, other.nome) && Objects.equals(nota, other.nota);
 	}
-	
-	
+		
 }
