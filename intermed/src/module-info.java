@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author leand
- *
- */
-module intermed {
-}

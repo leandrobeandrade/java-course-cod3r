@@ -1,4 +1,4 @@
-package campo_minado;
+package com.campo_minado;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
