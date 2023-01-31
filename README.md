@@ -20,10 +20,10 @@ Repositório responsável por armazenar códigos referentes ao curso realizado n
 
 - Lógica de programação e algoritmos
 - Sintaxe da linguagem Java
+- JRE vs JDK
+- Java vs Javac
 - Classes, atributos e métodos
 - Construtores, sobrecarga, encapsulamento
-- Estruturas de dados: arrays e coleções
-- Git/Github para versionamento
 
 ### Intermediário
 
@@ -40,18 +40,17 @@ Repositório responsável por armazenar códigos referentes ao curso realizado n
 - Generics
 - Programação funcional e expressões lambda
 - Stream API
-- Manipulação de arquivos
 
 ### Prático
 
+- Swing - interface gráfica
 - JavaFX - interface gráfica
 - JDBC - acesso a dados baseado em SQL
 - JPA/Hibernate - acesso a dados com mapeamento objeto-relacional (ORM)
-- Maven - gerenciamento de dependências de projeto
+- Web - conceitos sobre internet
 - Spring Boot - principal framework Java para desenvolvimento comercial
-- Spring Data JPA - framework para acesso a dados ORM
 - Spring Data MongoDB - framework para acesso a dados NoSQL ao banco MongoDB
 
 ## Autor: [Cod3r](https://github.com/cod3rcursos)
 
-![java-logo](https://user-images.githubusercontent.com/24658433/177206628-02947c1c-cb21-4aed-abc4-b779fbbc158d.png)
+![image](https://user-images.githubusercontent.com/24658433/215882102-9763d4c3-e8e3-49cd-aff4-f202c14de513.png)
