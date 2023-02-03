@@ -6,3 +6,5 @@ CREATE TABLE IF NOT EXISTS cidades (
     primary key(id),
     foreign key(estado_id) references estados(id)
 );
+
+-- drop table if exists teste;  -- deleta a tabela
