@@ -15,7 +15,7 @@ public class CriarBanco {
 		Connection connect = DriverManager.getConnection(url, usuario, senha);
 		
 		Statement stmt = connect.createStatement();
-		stmt.execute("CREATE DATABASE curso_java_cod3er");
+		stmt.execute("CREATE DATABASE IF NOT EXISTS curso_java_cod3r");
 		
 		System.out.println("Banco criado com sucesso!");
 		connect.close();
