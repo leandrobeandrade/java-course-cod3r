@@ -6,20 +6,19 @@ import javax.persistence.Persistence;
 
 import modelo.basico.Usuario;
 
-public class AlterarUsuario1 {
+public class RemoverUsuario {
 
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa");
 		EntityManager em = emf.createEntityManager();
 		
-		em.getTransaction().begin();
+		Usuario usuario = em.find(Usuario.class, 5L);
 		
-		Usuario usuario = em.find(Usuario.class, 4L);
-		usuario.setNome("ContraBelciclano");
-		usuario.setEmail("con@email.com");
-		
-		em.merge(usuario);
-		em.getTransaction().commit();
+		if (usuario != null) {
+			em.getTransaction().begin();
+			em.remove(usuario);
+			em.getTransaction().commit();
+		}
 				
 		em.close();
 		emf.close();

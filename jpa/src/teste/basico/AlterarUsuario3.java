@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 import modelo.basico.Usuario;
 
-public class AlterarUsuario1 {
+public class AlterarUsuario3 {
 
 	public static void main(String[] args) {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa");
@@ -15,6 +15,9 @@ public class AlterarUsuario1 {
 		em.getTransaction().begin();
 		
 		Usuario usuario = em.find(Usuario.class, 4L);
+		
+		em.detach(usuario);  // Coloca o objeto em um estado sincronizado
+		
 		usuario.setNome("ContraBelciclano");
 		usuario.setEmail("con@email.com");
 		
