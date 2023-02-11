@@ -21,6 +21,9 @@ public class Produto {
 	@Column(name = "prod_preco", nullable = false, precision = 11, scale = 2)
 	private Double preco;
 	
+	public Produto() {
+	}
+	
 	public Produto(String nome, Double preco) {
 		super();
 		this.nome = nome;

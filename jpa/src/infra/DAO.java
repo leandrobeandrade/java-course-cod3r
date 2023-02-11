@@ -25,6 +25,7 @@ public class DAO<T> {
 	}
 	
 	public DAO(Class<T> classe) {
+		this.classe = classe;
 		em = emf.createEntityManager();
 	}
 	
