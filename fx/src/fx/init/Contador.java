@@ -10,48 +10,71 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Contador extends Application {
-	
+
 	private int contador = 0;
+
+	private void atualizarLabelNumero(Label label) {
+		label.setText(Integer.toString(contador));
+
+		label.getStyleClass().remove("verde");
+		label.getStyleClass().remove("vermelho");
+
+		if (contador > 0) {
+			label.getStyleClass().add("verde");
+		} else if (contador < 0) {
+			label.getStyleClass().add("vermelho");
+		}
+	}
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		Label labelTitulo = new Label("Contador");
 		Label labelNumero = new Label("0");
-		
+
+		labelTitulo.getStyleClass().add("titulo");
+		labelNumero.getStyleClass().add("numero");
+
 		Button btnIncremento = new Button("+");
 		Button btnDecremento = new Button("-");
 		
+		btnIncremento.getStyleClass().add("botoes");
+		btnDecremento.getStyleClass().add("botoes");
+		
+		btnIncremento.setOnAction(e -> {
+			contador++;
+			atualizarLabelNumero(labelNumero);
+		});
+
+		btnDecremento.setOnAction(e -> {
+			contador--;
+			atualizarLabelNumero(labelNumero);
+		});
+
 		HBox boxBtns = new HBox();
 
 		boxBtns.setAlignment(Pos.CENTER);
 		boxBtns.setSpacing(10);
 		boxBtns.getChildren().add(btnIncremento);
 		boxBtns.getChildren().add(btnDecremento);
-		
-		btnIncremento.setOnAction(e -> {
-			contador++;
-			labelNumero.setText(Integer.toString(contador));
-		});
-		
-		btnDecremento.setOnAction(e -> {
-			contador--;
-			labelNumero.setText(Integer.toString(contador));
-		});
 
-		VBox boxPrincipal = new VBox();
-		
+		VBox boxConteudo = new VBox();
+
+		boxConteudo.getStyleClass().add("conteudo");
 		boxBtns.setAlignment(Pos.CENTER);
 		boxBtns.setSpacing(10);
-		boxPrincipal.getChildren().add(labelTitulo);
-		boxPrincipal.getChildren().add(labelNumero);
-		boxPrincipal.getChildren().add(boxBtns);
-		
-		Scene cena = new Scene(boxPrincipal, 400, 400);
-		
+		boxConteudo.getChildren().add(labelTitulo);
+		boxConteudo.getChildren().add(labelNumero);
+		boxConteudo.getChildren().add(boxBtns);
+
+		String caminhoCss = getClass().getResource("/fx/init/Contador.css").toExternalForm();
+		Scene cena = new Scene(boxConteudo, 400, 400);
+		cena.getStylesheets().add(caminhoCss);
+		cena.getStylesheets().add("https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap");
+
 		primaryStage.setScene(cena);
 		primaryStage.show();
 	}
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}
