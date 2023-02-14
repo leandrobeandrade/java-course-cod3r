@@ -60,8 +60,8 @@ public class Contador extends Application {
 		VBox boxConteudo = new VBox();
 
 		boxConteudo.getStyleClass().add("conteudo");
-		boxBtns.setAlignment(Pos.CENTER);
-		boxBtns.setSpacing(10);
+		boxConteudo.setAlignment(Pos.CENTER);
+		boxConteudo.setSpacing(10);
 		boxConteudo.getChildren().add(labelTitulo);
 		boxConteudo.getChildren().add(labelNumero);
 		boxConteudo.getChildren().add(boxBtns);
