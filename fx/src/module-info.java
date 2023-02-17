@@ -1,6 +1,9 @@
 module javafx {
 	requires javafx.controls;
+	requires javafx.fxml;
+	requires org.controlsfx.controls;
 	
-	opens fx.init;
-	opens fx.layout;
+	opens init;
+	opens layout;
+	opens fxml;
 }
