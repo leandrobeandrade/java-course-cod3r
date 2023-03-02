@@ -48,7 +48,7 @@ Repositório responsável por armazenar códigos referentes ao curso realizado n
 - JDBC - acesso a dados baseado em SQL
 - JPA/Hibernate - acesso a dados com mapeamento objeto-relacional (ORM)
 - Web - conceitos sobre internet
-- Mave / Spring Boot - principal framework Java para desenvolvimento comercial
+- Maven / Spring Boot - principal framework Java para desenvolvimento comercial
 - Spring Data MongoDB - framework para acesso a dados NoSQL ao banco MongoDB
 
 ## Autor: [Cod3r](https://github.com/cod3rcursos)
