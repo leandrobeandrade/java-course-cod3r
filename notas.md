@@ -18,6 +18,7 @@ Notas rápidas de pontos importantes destacados na linguagem.
 - **Queue**: Fila (FIFO)
 - **Stack**: Pilha (LIFO)
 
+## 
 final => cria uma constante, em métodos não deixa ser sobrescrito
 var => infere o tipo pelo valor da variável
 tipos primitivos => byte, short, int, long, float, double, char, boolean
